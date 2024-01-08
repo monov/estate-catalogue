@@ -45,13 +45,13 @@ const Home = () => {
 
   const slider = [
     {
-      url: "../src/assets/imgs/slider/pic1.webp",
+      url: "/slider/pic1.webp",
     },
     {
-      url: "../src/assets/imgs/slider/pic2.webp",
+      url: "/slider/pic2.webp",
     },
     {
-      url: "../src/assets/imgs/slider/pic3.webp",
+      url: "/slider/pic3.webp",
     },
   ];
 
