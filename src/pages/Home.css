@@ -35,7 +35,7 @@ section{
 }
 
 .home-text-gallery{
-  height: 70dvh;
+  height: 70vh;
   width: 100%;
   background: #414042;
   display: flex;
@@ -142,7 +142,7 @@ section{
 }
 
 .home-whyus{
-  height: 80dvh;
+  height: 80vh;
   background: #d89e1a;
   display: flex;
   flex-direction: column;
@@ -217,7 +217,7 @@ section{
 
 @media (width <= 900px) {
   .home-text-gallery{
-    height: 110dvh;
+    height: 110vh;
     width: 100%;
     background: #414042;
     display: flex;
@@ -236,7 +236,7 @@ section{
 
 @media (width <= 900px) {
   .home-text-gallery{
-    height: 115dvh;
+    height: 115vh;
     width: 100%;
     background: #414042;
     display: flex;
