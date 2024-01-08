@@ -1,7 +1,7 @@
 .cards-wrapper{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 5rem;
 }
@@ -12,6 +12,7 @@
   /* height: 26rem; */
   width: 24rem;
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 .card h3{
@@ -51,8 +52,4 @@
   border-radius: 5px;
   border: solid 1px var(--secondary-color);
   /* box-shadow: 0 0 8px #1f1f1f; */
-}
-
-.flat-name{
-
 }

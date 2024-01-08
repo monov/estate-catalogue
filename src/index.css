@@ -11,3 +11,8 @@
   --secondary-color: #d89e1a;
   --theme-color: #fff;
 }
+
+::selection{
+  background: var(--main-color);
+  color: #fff;
+}
