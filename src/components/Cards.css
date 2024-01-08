@@ -54,3 +54,10 @@
   border: solid 1px var(--secondary-color);
   /* box-shadow: 0 0 8px #1f1f1f; */
 }
+
+
+@media (width < 800px) {
+  .card{
+    margin-left: 0;
+  }
+}
