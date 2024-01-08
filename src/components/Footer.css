@@ -1,0 +1,17 @@
+.footer-body{
+  height: 300px;
+  width: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo{
+  height: 250px;
+  width: 250px;
+  background: url('/src/assets/logo.svg');
+  background-size: cover;
+  background-position: center;
+  left: 8rem;
+  position: absolute;
+}

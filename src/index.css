@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   color: #000;
-  font-family: sans-serif;
+  font-family: "main-app";
 }
 
 :root{
@@ -15,4 +15,25 @@
 ::selection{
   background: var(--main-color);
   color: #fff;
+}
+
+@font-face {
+  font-family: 'main-app';
+  src: url('/fonts/main.ttf') format('truetype'); /* adjust the path and format as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'main-app-bold';
+  src: url('/fonts/main_bold.ttf') format('truetype'); /* adjust the path and format as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'main-app-thin';
+  src: url('/fonts/main_thin.ttf') format('truetype'); /* adjust the path and format as needed */
+  font-weight: normal;
+  font-style: normal;
 }

@@ -41,6 +41,38 @@
   width: 50%;
   height: 100%;
   background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.txt-sizer{
+  width: 650px;
+}
+
+.txt-sizer p{
+  font-family: "main-app-thin";
+  font-weight: bolder;
+  color: #fff;
+}
+
+.home-text-gallery-txt-header{
+  font-size: 28px;
+}
+
+.home-text-gallery-txt-intro{
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.home-text-gallery-txt-main{
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.home-text-gallery-txt-outro{
+  margin-top: 4rem;
+  font-size: 20px;
 }
 
 .home-text-gallery-glr{

@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Mobilenav from "../components/Mobilenav";
 import Cards from "../components/Cards";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -72,7 +73,19 @@ const Home = () => {
       </section>
 
       <section className="home-text-gallery">
-        <div className="home-text-gallery-txt"></div>
+        <div className="home-text-gallery-txt">
+          <div className="txt-sizer">
+            <p className="home-text-gallery-txt-header">Для тех, кто ищет роскошную и просторную квартиру!</p>
+            <p className="home-text-gallery-txt-intro">Требования квартире выбранной вами:</p>
+            <p className="home-text-gallery-txt-main">
+              — использованы высококачественные материалы (жженый кирпич,
+              арматура и другие материалы)<br/> — правильное расположение жилого
+              комплекса, детская площадка, стадион для футбола, оснащенность
+              беседками и скамейками для отдыха;
+            </p>
+            <p className="home-text-gallery-txt-outro">Мы вам поможем!</p>
+          </div>
+        </div>
         <div className="home-text-gallery-glr">
           <IoIosArrowBack className="arrow arrow-back" onClick={prevSlide} />
           {slider.map((item, idx) => {
@@ -115,6 +128,7 @@ const Home = () => {
           })}
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };
