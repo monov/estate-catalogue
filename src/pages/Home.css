@@ -233,6 +233,42 @@ section{
   }
 }
 
+.home-contacts p, h3{
+  color: #fff;
+}
+
+.home-contacts-body{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+}
+
+.home-socials-icon{
+  margin-top: 1.6rem;
+  margin-left: 10px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  cursor: pointer;
+  background: #d89e1a;
+  border-radius: 100%;
+  fill: #fff;
+}
+
+/* .home-socials-icon:nth-of-type(1){
+  fill: rgb(193, 53, 132);
+}
+
+.home-socials-icon:nth-of-type(2){
+  fill: #316FF6;
+}
+
+.home-socials-icon:nth-of-type(3){
+  fill: #0088cc;
+} */
+
 
 @media (width <= 900px) {
   .home-text-gallery{

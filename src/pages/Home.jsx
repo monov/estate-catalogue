@@ -3,8 +3,9 @@ import "./Home.css";
 import Navbar from "../components/Navbar";
 import Mobilenav from "../components/Mobilenav";
 import Cards from "../components/Cards";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Footer from "../components/Footer";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { FaInstagram, FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -75,13 +76,18 @@ const Home = () => {
       <section className="home-text-gallery">
         <div className="home-text-gallery-txt">
           <div className="txt-sizer">
-            <p className="home-text-gallery-txt-header">Для тех, кто ищет роскошную и просторную квартиру!</p>
-            <p className="home-text-gallery-txt-intro">Требования квартире выбранной вами:</p>
+            <p className="home-text-gallery-txt-header">
+              Для тех, кто ищет роскошную и просторную квартиру!
+            </p>
+            <p className="home-text-gallery-txt-intro">
+              Требования квартире выбранной вами:
+            </p>
             <p className="home-text-gallery-txt-main">
               — использованы высококачественные материалы (жженый кирпич,
-              арматура и другие материалы)<br/> — правильное расположение жилого
-              комплекса, детская площадка, стадион для футбола, оснащенность
-              беседками и скамейками для отдыха;
+              арматура и другие материалы)
+              <br /> — правильное расположение жилого комплекса, детская
+              площадка, стадион для футбола, оснащенность беседками и скамейками
+              для отдыха;
             </p>
             <p className="home-text-gallery-txt-outro">Мы вам поможем!</p>
           </div>
@@ -127,7 +133,24 @@ const Home = () => {
           })}
         </div>
       </section>
-      <Footer/>
+      <section className="home-contacts-body">
+        <div className="home-contacts">
+          <h3>Мы на связи</h3>
+          <p>
+            +998 78 113 0887 <br />
+            info@vipflat.uz <br />
+            БЦ "Asrtec"
+            <br />
+            Ташкент, ул. Афросиаб, 4А
+          </p>
+          <div className="home-contacts-socials">
+            <FaInstagram  className="home-socials-icon"/>
+            <FaFacebookF className="home-socials-icon"/>
+            <FaTelegramPlane className="home-socials-icon"/>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 };
