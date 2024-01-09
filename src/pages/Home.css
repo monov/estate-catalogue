@@ -188,50 +188,7 @@ section{
   color: #fff;
 }
 
-@media (width > 1920px) {
-  .home-whyus{
-    height: 700px;
-  }
-}
 
-@media (width < 1450px) {
-  .home-text-gallery-txt-header{
-    font-size: 24px;
-  }
-  
-  .home-text-gallery-txt-intro{
-    margin-top: 2rem;
-    font-size: 16px;
-  }
-  
-  .home-text-gallery-txt-main{
-    margin-top: 2rem;
-    font-size: 16px;
-  }
-  
-  .home-text-gallery-txt-outro{
-    margin-top: 4rem;
-    font-size: 16px;
-  }
-}
-
-@media (width <= 900px) {
-  .home-text-gallery{
-    height: 110vh;
-    width: 100%;
-    background: #414042;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home-text-gallery-txt{
-    width: 100%;
-  }
-
-  .home-text-gallery-glr{
-    width: 100%;
-  }
-}
 
 .home-contacts p, h3{
   color: #fff;
@@ -269,6 +226,71 @@ section{
   fill: #0088cc;
 } */
 
+@media (width > 1920px) {
+  .home-whyus{
+    height: 700px;
+  }
+}
+
+@media (width < 1450px) {
+  .home-text-gallery-txt-header{
+    font-size: 24px;
+  }
+  
+  .home-text-gallery-txt-intro{
+    margin-top: 2rem;
+    font-size: 16px;
+  }
+  
+  .home-text-gallery-txt-main{
+    margin-top: 2rem;
+    font-size: 16px;
+  }
+  
+  .home-text-gallery-txt-outro{
+    margin-top: 4rem;
+    font-size: 16px;
+  }
+}
+
+@media (width <= 1250px){
+  .home-whyus-wrapper{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-whyus{
+    height: 90vh;
+  }
+
+  .whyus-sub{
+    width: 200px;
+  }
+
+  .whyus-text-p{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .whyus-main{
+    font-family: "main-app-bold";
+  }
+
+  .line{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .home-whyus-item{
+    margin-top: 1.5rem;
+    width: 60vw;
+  }
+}
 
 @media (width <= 900px) {
   .home-text-gallery{
