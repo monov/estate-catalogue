@@ -110,7 +110,6 @@ const Home = () => {
           />
         </div>
       </section>
-
       <section className="home-whyus">
         <h1 className="whyus-text">Почему мы?</h1>
         <p className="whyus-text-p">
