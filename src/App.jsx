@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import FlatDetail from "./pages/FlatDetail";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div className="app">
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/flats/:flatId" element={<FlatDetail />} />
       </Routes>
       </div>
     </Router>

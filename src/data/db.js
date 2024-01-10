@@ -52,33 +52,6 @@ let flats = [
     area: 73,
     description: "Hello world! this page is made in react Hello world! this page is made in react",
     img: "/cards/card1/bedroom.jpg"
-  },
-  {
-    id: 6,
-    region: "Шайхантахурский район",
-    name: "Трехкомнатная квартира 73м2 ЖК «Gardens Residence»",
-    price: 250000,
-    area: 73,
-    description: "Hello world! this page is made in react Hello world! this page is made in react",
-    img: "/cards/card1/bedroom.jpg"
-  },
-  {
-    id: 6,
-    region: "Шайхантахурский район",
-    name: "Трехкомнатная квартира 73м2 ЖК «Gardens Residence»",
-    price: 250000,
-    area: 73,
-    description: "Hello world! this page is made in react Hello world! this page is made in react",
-    img: "/cards/card1/bedroom.jpg"
-  },
-  {
-    id: 6,
-    region: "Шайхантахурский район",
-    name: "Трехкомнатная квартира 73м2 ЖК «Gardens Residence»",
-    price: 250000,
-    area: 73,
-    description: "Hello world! this page is made in react Hello world! this page is made in react",
-    img: "/cards/card1/bedroom.jpg"
   }
 ];
 

@@ -6,6 +6,8 @@ import Cards from "../components/Cards";
 import Footer from "../components/Footer";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaInstagram, FaFacebookF, FaTelegramPlane } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import flats from "../data/db";
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);

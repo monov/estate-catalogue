@@ -13,6 +13,7 @@
   width: 24rem;
   cursor: pointer;
   margin-left: 2rem;
+  text-decoration: none;
 }
 
 .flat-name{
@@ -54,6 +55,7 @@
   border: solid 1px var(--secondary-color);
   /* box-shadow: 0 0 8px #1f1f1f; */
 }
+
 
 
 @media (width < 800px) {
