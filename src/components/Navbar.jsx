@@ -7,9 +7,10 @@ const Navbar = () => {
       <div className="navbar-logo"></div>
 
       <div className="navbar-list">
-        <li>Топ квартиры</li>
-        <li>Наш блог</li>
-        <li>Почему мы?</li>
+        <li>Все квартиры</li>
+        <li>По районам</li>
+        <li>Продавцу</li>
+        <li>О нас</li>
         <li>Контакты</li>
       </div>
     </div>
