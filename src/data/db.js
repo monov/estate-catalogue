@@ -6,7 +6,8 @@ let flats = [
     price: 355000,
     area: 110,
     description: "Hello world! this page is made in react Hello world! this page is made in react",
-    img: "/cards/card1/bedroom.jpg"
+    img: "/cards/card1/bedroom.jpg",
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
   },
   {
     id: 2,
@@ -15,7 +16,8 @@ let flats = [
     price: 250000,
     area: 73,
     description: "Продается трехкомнатная квартира на 7 этаже 8 этажного дома. Находится она в Шайхантахурском районе...",
-    img: "/cards/card1/bedroom.jpg"
+    img: "/cards/card2/a.jpg",
+    pics: ["/cards/card2/a", "/cards/card2/a", "/cards/card2/a"]
   },
   {
     id: 3,
@@ -24,7 +26,8 @@ let flats = [
     price: 250000,
     area: 73,
     description: "Hello world! this page is made in react Hello world! this page is made in react  Hello world! this page is made in react Hello world! this page is made in react",
-    img: "/cards/card1/bedroom.jpg"
+    img: "/cards/card1/bedroom.jpg",
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
   },
   {
     id: 4,
@@ -33,7 +36,8 @@ let flats = [
     price: 250000,
     area: 73,
     description: "Hello world! this page is made in react Hello world! this page is made in react",
-    img: "/cards/card1/bedroom.jpg"
+    img: "/cards/card1/bedroom.jpg",
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
   },
   {
     id: 5,
@@ -42,7 +46,8 @@ let flats = [
     price: 250000,
     area: 73,
     description: "Hello world! this page is made in react Hello world! this page is made in react Hello world! this page is made in react",
-    img: "/cards/card1/bedroom.jpg"
+    img: "/cards/card1/bedroom.jpg",
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
   },
   {
     id: 6,
@@ -51,7 +56,8 @@ let flats = [
     price: 250000,
     area: 73,
     description: "Hello world! this page is made in react Hello world! this page is made in react",
-    img: "/cards/card1/bedroom.jpg"
+    img: "/cards/card1/bedroom.jpg",
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
   }
 ];
 
