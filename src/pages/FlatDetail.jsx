@@ -24,6 +24,7 @@ const FlatDetail = () => {
   const flat = flats.find((flat) => flat.id === parseInt(flatId));
 
   let settings = {
+    lazyLoad: true,
     dots: true,
     infinite: true,
     speed: 500,
