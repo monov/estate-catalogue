@@ -56,7 +56,9 @@ const FlatDetail = () => {
     <div>
       <section>
         <div className="buttons-wrapper">
-          <div className="button" onClick={goToSlide}>План</div>
+          <div className="button" onClick={goToSlide}>
+            План
+          </div>
           <div className="button">Описание</div>
           <div className="button">Записаться на просмотр</div>
         </div>
@@ -116,6 +118,40 @@ const FlatDetail = () => {
         </div>
       </section>
       <div className="space"></div>
+      <section className="fldt-moreinfo-body">
+        <div className="fldt-moreinfo price">
+          <p className="fldt-moreinfo-p-title">Цена</p>
+          {flat.additionalInfo.price.map((item) => {
+            return <p>{item}</p>;
+          })}
+          <p className="fldt-moreinfo-p-title">Расположение</p>
+          {flat.additionalInfo.location.map((item) => {
+            return <p>{item}</p>;
+          })}
+        </div>
+        <div className="fldt-moreinfo home">
+          <p className="fldt-moreinfo-p-title">Дом</p>
+          {flat.additionalInfo.home.map((item) => {
+            return <p>{item}</p>;
+          })}
+        </div>
+        <div className="fldt-moreinfo apartment">
+          <p className="fldt-moreinfo-p-title">Квартира</p>
+          <div className="fldt-moreinfo-apartment-wrapper">
+            <div className="fldt-moreinfo-apartmen-part1">
+              {flat.additionalInfo.apartment.part1.map((item) => {
+                return <p>{item}</p>;
+              })}
+            </div>
+            <div className="fldt-moreinfo-apartment-part2">
+            {flat.additionalInfo.apartment.part2.map((item) => {
+                return <p>{item}</p>;
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="space"></div>
       <section className="contact-us">
         <div className="our-agent">
           <div className="pfp"></div>
@@ -125,6 +161,7 @@ const FlatDetail = () => {
           </div>
         </div>
       </section>
+      <div className="space"></div>
     </div>
   );
 };

@@ -18,7 +18,8 @@ const Cards = () => {
           <p className="flat-region"> {flat.region} </p>
           <p className="flat-name">{flat.name}</p>
           <p className="flat-price">
-            {flat.price} USD - <span>{Math.round(flat.price / flat.area)} USD/m2</span>
+            {flat.price} USD -{" "}
+            <span>{Math.round(flat.price / flat.area)} USD/m2</span>
           </p>
           <p className="flat-desc">{flat.description}</p>
         </Link>

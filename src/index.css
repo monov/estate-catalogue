@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #000;
   font-family: "main-app";
+  scroll-behavior: smooth;
 }
 
 :root{

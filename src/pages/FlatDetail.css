@@ -389,3 +389,36 @@
   font-family: "main-app-bold";
   font-size: 20px;
 }
+
+.fldt-moreinfo-body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+
+}
+
+.fldt-moreinfo-apartment-wrapper{
+  display: flex;
+}
+
+.fldt-moreinfo{
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+  width: 300px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.fldt-moreinfo.apartment{
+  width: 600px;
+}
+
+.fldt-moreinfo-p-title{
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
