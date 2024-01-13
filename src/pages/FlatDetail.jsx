@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import flats from "../data/db.js";
 import Slider from "react-slick";
@@ -20,8 +20,13 @@ const CustomNextArrow = ({ onClick }) => (
 );
 
 const FlatDetail = () => {
+  const sliderRef = useRef();
   const { flatId } = useParams();
   const flat = flats.find((flat) => flat.id === parseInt(flatId));
+
+  const goToSlide = () => {
+    sliderRef.current.slickGoTo(-1);
+  };
 
   let settings = {
     lazyLoad: true,
@@ -32,6 +37,15 @@ const FlatDetail = () => {
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
+    customPaging: function (i) {
+      return (
+        <div
+          className={`custom-dot ${
+            i === sliderRef.current?.state.currentSlide ? "active" : ""
+          }`}
+        ></div>
+      );
+    },
   };
 
   if (!flat) {
@@ -42,7 +56,7 @@ const FlatDetail = () => {
     <div>
       <section>
         <div className="buttons-wrapper">
-          <div className="button">План</div>
+          <div className="button" onClick={goToSlide}>План</div>
           <div className="button">Описание</div>
           <div className="button">Записаться на просмотр</div>
         </div>
@@ -50,10 +64,12 @@ const FlatDetail = () => {
           <div className="fldt-title-main">{flat.name}</div>
           <div className="fldt-title-price">
             {flat.price} USD -&nbsp;
-            <span className="fldt-title-price-span">{Math.round(flat.price / flat.area)} USD/m2</span>
+            <span className="fldt-title-price-span">
+              {Math.round(flat.price / flat.area)} USD/m2
+            </span>
           </div>
         </div>
-        <Slider {...settings}>
+        <Slider ref={sliderRef} {...settings}>
           {flat.pics.map((item, index) => (
             <div key={index}>
               <div
@@ -69,9 +85,46 @@ const FlatDetail = () => {
           ))}
         </Slider>
       </section>
-
-      <h2>{flat.name}</h2>
-      <p>{flat.description}</p>
+      <div className="space"></div>
+      <section className="fldt-bio">
+        <div className="fldt-bio-text">{flat.bio}</div>
+        <div className="fldt-bio-bullets">
+          <div className="fldt-bullet-wrapper">
+            <div className="fldt-icon a"></div>
+            <p className="fldt-bullet">{`Район: ${flat.region}`}</p>
+          </div>
+          <div className="fldt-bullet-wrapper">
+            <div className="fldt-icon b"></div>
+            <p className="fldt-bullet">{`Комнат: text`}</p>
+          </div>
+          <div className="fldt-bullet-wrapper">
+            <div className="fldt-icon c"></div>
+            <p className="fldt-bullet">{`Этаж: text`}</p>
+          </div>
+          <div className="fldt-bullet-wrapper">
+            <div className="fldt-icon d"></div>
+            <p className="fldt-bullet">{`Этажность: text`}</p>
+          </div>
+          <div className="fldt-bullet-wrapper">
+            <div className="fldt-icon e"></div>
+            <p className="fldt-bullet">{`Общая площадь: ${flat.area}m2`}</p>
+          </div>
+          <div className="fldt-bullet-wrapper">
+            <div className="fldt-icon f"></div>
+            <p className="fldt-bullet">{`Ремонт: text`}</p>
+          </div>
+        </div>
+      </section>
+      <div className="space"></div>
+      <section className="contact-us">
+        <div className="our-agent">
+          <div className="pfp"></div>
+          <div className="our-agent-text">
+            <p className="agent-name-p">Саидислом Ходжаев</p>
+            <p>С радостью проконсультирую вас по данной квартире</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

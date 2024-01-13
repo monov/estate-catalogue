@@ -165,10 +165,10 @@
   height: 80px;
   padding: 10px;
   border-radius: 5px 5px 0 0;
-  background: rgba(216, 158, 26, 0.5);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(216, 158, 26, 0.8);
+  -webkit-backdrop-filter: blur(5px);
   border: 2px solid rgba(216, 158, 26, 0.3);
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(5px);
   font-size: 18px;
   color: #fff;
   font-family: "main-app-bold";
@@ -258,4 +258,134 @@
 .fldt-title-price-span{
   font-size: 13px;
   color: #3f3f3f;
+}
+
+.space{
+  height: 3rem;
+}
+
+.fldt-bio{
+  width: 100%;
+  padding: 0 200px 0 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fldt-bio-text{
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.fldt-icon{
+  height: 24px;
+  width: 24px;
+  background: red;
+}
+
+.fldt-icon.a{
+  margin-top: 0;
+  background: url(/icons/map-marker.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fldt-icon.b{
+  background: url(/icons/bed.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fldt-icon.c{
+  background: url(/icons/stairs.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fldt-icon.d{
+  background: url(/icons/building.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fldt-icon.e{
+  background: url(/icons/measurement.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fldt-icon.f{
+  background: url(/icons/paint-roller.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fldt-bullet-wrapper{
+  display: flex;
+  margin-top: 10px;
+}
+
+.fldt-bullet{
+  height: 24px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-dot {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  background-color: rgba(147, 147, 147, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+  border: solid 2px rgba(0, 0, 0, 0.8);
+}
+
+.slick-active .custom-dot{
+  background-color: #d89f1ab1;
+  backdrop-filter: blur(100px);
+  border: solid 8px var(--secondary-color);
+}
+
+.contact-us{
+  width: 100%;
+  padding: 0 200px 0 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.pfp{
+  height: 150px;
+  width: 150px;
+  background: url(/imgs/islam.png);
+  background-position: center;
+  background-size: 110%;
+  border: solid 2px var(--secondary-color);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.our-agent{
+  display: flex;
+}
+
+.our-agent-text{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.our-agent-text p{
+  font-weight: bold;
+  width: 300px;
+}
+
+.agent-name-p{
+  font-family: "main-app-bold";
+  font-size: 20px;
 }

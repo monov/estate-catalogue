@@ -5,9 +5,14 @@ let flats = [
     name: "Трехкомнатная квартира 110м2 ЖК «Gardens Residence»",
     price: 355000,
     area: 110,
-    description: "Hello world! this page is made in react Hello world! this page is made in react",
+    description:
+      "Hello world! this page is made in react Hello world! this page is made in react",
+    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале.`,
     img: "/cards/card1/bedroom.jpg",
-    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"],
   },
   {
     id: 2,
@@ -15,9 +20,14 @@ let flats = [
     name: "Трехкомнатная квартира 73м2 ЖК «Gardens Residence»",
     price: 250000,
     area: 73,
-    description: "Продается трехкомнатная квартира на 7 этаже 8 этажного дома. Находится она в Шайхантахурском районе...",
+    description:
+      "Продается трехкомнатная квартира на 7 этаже 8 этажного дома. Находится она в Шайхантахурском районе...",
+    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале.`,
     img: "/cards/card2/a.jpg",
-    pics: ["/cards/card2/a", "/cards/card2/a", "/cards/card2/a"]
+    pics: ["/cards/card2/a", "/cards/card2/a", "/cards/card2/a"],
   },
   {
     id: 3,
@@ -25,9 +35,14 @@ let flats = [
     name: "Трехкомнатная квартира 73м2 ЖК «Gardens Residence»",
     price: 250000,
     area: 73,
-    description: "Hello world! this page is made in react Hello world! this page is made in react  Hello world! this page is made in react Hello world! this page is made in react",
+    description:
+      "Hello world! this page is made in react Hello world! this page is made in react  Hello world! this page is made in react Hello world! this page is made in react",
+    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале.`,
     img: "/cards/card1/bedroom.jpg",
-    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"],
   },
   {
     id: 4,
@@ -35,9 +50,14 @@ let flats = [
     name: "Трехкомнатная квартира 73м2 ЖК «Gardens Residence»",
     price: 250000,
     area: 73,
-    description: "Hello world! this page is made in react Hello world! this page is made in react",
+    description:
+      "Hello world! this page is made in react Hello world! this page is made in react",
+    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале.`,
     img: "/cards/card1/bedroom.jpg",
-    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"],
   },
   {
     id: 5,
@@ -45,9 +65,14 @@ let flats = [
     name: "Трехкомнатная квартира 73м2 ЖК «Gardens Residence»",
     price: 250000,
     area: 73,
-    description: "Hello world! this page is made in react Hello world! this page is made in react Hello world! this page is made in react",
+    description:
+      "Hello world! this page is made in react Hello world! this page is made in react Hello world! this page is made in react",
+    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале.`,
     img: "/cards/card1/bedroom.jpg",
-    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"],
   },
   {
     id: 6,
@@ -55,10 +80,15 @@ let flats = [
     name: "Трехкомнатная квартира 73м2 ЖК «Gardens Residence»",
     price: 250000,
     area: 73,
-    description: "Hello world! this page is made in react Hello world! this page is made in react",
+    description:
+      "Hello world! this page is made in react Hello world! this page is made in react",
+    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
+    Находится она в Юнусабадском районе, тринадцатом квартале.`,
     img: "/cards/card1/bedroom.jpg",
-    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"]
-  }
+    pics: ["/cards/card2/f", "/cards/card2/f", "/cards/card2/f"],
+  },
 ];
 
 export default flats;
