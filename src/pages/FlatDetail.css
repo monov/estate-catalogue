@@ -422,3 +422,48 @@
   margin-bottom: 5px;
   font-weight: bolder;
 }
+
+@media (width < 450px) {
+  .buttons-wrapper, .fldt-title-wrapper{
+    display: none;
+  }
+
+  .fldt-bio{
+    padding: 0;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .fldt-bio-bullets{
+    margin-bottom: 3rem;
+  }
+
+  .fldt-moreinfo-body, .fldt-moreinfo-apartment-wrapper{
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 3rem;
+  }
+
+  .fldt-moreinfo{
+    margin-top: 3rem;
+  }
+
+  .fldt-moreinfo.apartment{
+    width: 300px;
+  }
+
+  .contact-us{
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our-agent{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-agent-text{
+    text-align: center;
+  }
+}

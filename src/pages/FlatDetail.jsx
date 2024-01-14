@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import flats from "../data/db.js";
 import Slider from "react-slick";
@@ -20,6 +20,22 @@ const CustomNextArrow = ({ onClick }) => (
 );
 
 const FlatDetail = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const galleryHeight = windowWidth < 450 ? "100vh" : "100vh";
+
   const sliderRef = useRef();
   const { flatId } = useParams();
   const flat = flats.find((flat) => flat.id === parseInt(flatId));
@@ -79,7 +95,7 @@ const FlatDetail = () => {
                   background: `url(${item}.jpg)`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
-                  height: "100vh",
+                  height: windowWidth < 450 ? "40vh" : "100vh",
                   width: "100%",
                 }}
               ></div>
@@ -144,7 +160,7 @@ const FlatDetail = () => {
               })}
             </div>
             <div className="fldt-moreinfo-apartment-part2">
-            {flat.additionalInfo.apartment.part2.map((item) => {
+              {flat.additionalInfo.apartment.part2.map((item) => {
                 return <p>{item}</p>;
               })}
             </div>
