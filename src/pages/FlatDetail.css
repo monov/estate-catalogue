@@ -238,7 +238,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 10;
 }
 
 .custom-dot {
@@ -395,7 +395,7 @@
   display: flex;
   justify-content: center;
   padding: 50px;
-
+  align-items: center;
 }
 
 .fldt-moreinfo-apartment-wrapper{
@@ -441,11 +441,15 @@
   .fldt-moreinfo-body, .fldt-moreinfo-apartment-wrapper{
     flex-direction: column;
     padding: 0;
-    padding-bottom: 3rem;
+  }
+
+  .fldt-moreinfo-body{
+    height: 2000px;
   }
 
   .fldt-moreinfo{
     margin-top: 3rem;
+    margin-left: 0;
   }
 
   .fldt-moreinfo.apartment{
@@ -484,6 +488,10 @@
 
   .slick-active .custom-dot{
     border: solid 4px var(--secondary-color);
+  }
+
+  .our-agent-text{
+    margin-left: 0;
   }
   
 }
