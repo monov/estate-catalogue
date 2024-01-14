@@ -36,8 +36,6 @@ const FlatDetail = () => {
     };
   }, []);
 
-  const galleryHeight = windowWidth < 450 ? "100vh" : "100vh";
-
   const sliderRef = useRef();
   const { flatId } = useParams();
   const flat = flats.find((flat) => flat.id === parseInt(flatId));
@@ -115,15 +113,15 @@ const FlatDetail = () => {
           </div>
           <div className="fldt-bullet-wrapper">
             <div className="fldt-icon b"></div>
-            <p className="fldt-bullet">{`Комнат: text`}</p>
+            <p className="fldt-bullet">{`Комнат: ${flat.rooms}`}</p>
           </div>
           <div className="fldt-bullet-wrapper">
             <div className="fldt-icon c"></div>
-            <p className="fldt-bullet">{`Этаж: text`}</p>
+            <p className="fldt-bullet">{`Этаж: ${flat.level}`}</p>
           </div>
           <div className="fldt-bullet-wrapper">
             <div className="fldt-icon d"></div>
-            <p className="fldt-bullet">{`Этажность: text`}</p>
+            <p className="fldt-bullet">{`Этажность: ${flat.levels}`}</p>
           </div>
           <div className="fldt-bullet-wrapper">
             <div className="fldt-icon e"></div>
@@ -131,7 +129,7 @@ const FlatDetail = () => {
           </div>
           <div className="fldt-bullet-wrapper">
             <div className="fldt-icon f"></div>
-            <p className="fldt-bullet">{`Ремонт: text`}</p>
+            <p className="fldt-bullet">{`Ремонт: ${flat.remont}`}</p>
           </div>
         </div>
       </section>

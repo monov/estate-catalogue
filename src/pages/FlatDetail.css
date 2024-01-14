@@ -470,4 +470,20 @@
   .fldt-bio-text{
     width: 78%;
   }
+
+  .custom-prev-arrow, .custom-next-arrow {
+    height: 35px;
+    width: 35px;
+  }
+
+  .custom-dot{
+    height: 12px;
+    width: 12px;
+    border: solid .5px;
+  }
+
+  .slick-active .custom-dot{
+    border: solid 4px var(--secondary-color);
+  }
+  
 }
