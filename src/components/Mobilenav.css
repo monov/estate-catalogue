@@ -65,7 +65,7 @@
   background: #1c7b63d1;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  height: 1px;
+  height: .001px;
   transition: .2s;
   display: flex;
   align-items: center;

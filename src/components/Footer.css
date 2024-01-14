@@ -57,7 +57,7 @@
 
 @media (width < 480px) {
   .footer-body{
-    height: 350px;
+    height: 400px;
   }
 
   .footer-nav a{
