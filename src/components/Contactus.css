@@ -1,0 +1,135 @@
+.cntcts-wrapper{
+  height: 214px;
+  width: 70px;
+  position: fixed;
+  bottom: 60px;
+  right: 120px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.cntcts-icon{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  background: rgba(216, 158, 26, 0.65);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(216, 158, 26, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cntcts-telegram{
+  width: 62px;
+  height: 62px;
+  background: blue;
+  border-radius: 100%;
+  position: absolute;
+  transition: .2s;
+  opacity: 0;
+  background: rgba(34, 158, 217, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(34, 158, 217, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cntcts-icons{
+  fill: white;
+  font-size: 40px;
+}
+
+.cntcts-icons.p{
+  font-size: 35px;
+}
+
+.cntcts-icon-main{
+  height: 55px;
+  transition: .3s;
+}
+
+.cntcts-phone{
+  width: 62px;
+  height: 62px;
+  border-radius: 100%;
+  position: absolute;
+  transition: .2s;
+  opacity: 0;
+  background: rgba(0, 216, 28, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(11.9px);
+  -webkit-backdrop-filter: blur(11.9px);
+  border: 1px solid rgba(0, 216, 28, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cntcts-phone.active{
+  margin-bottom: 80px;
+  opacity: 1;
+}
+
+.cntcts-telegram.active{
+  margin-bottom: 154px;
+  opacity: 1;
+}
+
+.cntcts-icon.active img{
+  transform: scale(0);
+  position: absolute;
+}
+
+.cntcts-icon img{
+  position: absolute;
+}
+
+
+.cntcts-icon.active .cross{
+  transform: scale(1);
+}
+
+.cntcts-icon .cross{
+  transform: scale(0);
+}
+
+.cross{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+.cross-line{
+  height: 40px;
+  width: 5px;
+  border-radius: 100px;
+  background: #fff;
+  position: absolute;
+}
+
+.cross-line.a{
+  transform: rotate(45deg);
+}
+
+.cross-line.b{
+  transform: rotate(-45deg);
+}
+
+@media (width < 450px) {
+  .cntcts-wrapper{
+    bottom: 20px;
+    right: 20px;
+  }
+}

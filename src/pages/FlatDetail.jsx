@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./FlatDetail.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import Contactus from "../components/Contactus.jsx";
 
 const CustomPrevArrow = ({ onClick }) => (
   <div className="custom-prev-arrow" onClick={onClick}>
@@ -70,6 +71,7 @@ const FlatDetail = () => {
 
   return (
     <div>
+      <Contactus />
       <section>
         <div className="buttons-wrapper">
           <div className="button" onClick={goToSlide}>
@@ -102,6 +104,24 @@ const FlatDetail = () => {
             </div>
           ))}
         </Slider>
+      </section>{" "}
+      <div className="fldt-title-wrapper-mobile">
+        <div className="fldt-title-main-mobile">{flat.name}</div>
+        <div className="fldt-title-price-mobile">
+          {flat.price} USD -&nbsp;
+          <span className="fldt-title-price-span ttpr-mobile">
+            {Math.round(flat.price / flat.area)} USD/m2
+          </span>
+        </div>
+      </div>
+      <section className="buttons-wrapper-mobile">
+        <div className="buttons-first-row">
+          <div className="button-mobile" onClick={goToSlide}>
+            План
+          </div>
+          <div className="button-mobile">Описание</div>
+        </div>
+        <div className="button-mobile second-row">Записаться на просмотр</div>
       </section>
       <div className="space"></div>
       <section className="fldt-bio">

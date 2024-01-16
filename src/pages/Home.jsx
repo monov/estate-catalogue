@@ -8,6 +8,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaInstagram, FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import flats from "../data/db";
+import Contactus from "../components/Contactus";
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -62,6 +63,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+      <Contactus />
       <Mobilenav />
 
       <section className="home-cards-body-wrapper">

@@ -423,6 +423,91 @@
   font-weight: bolder;
 }
 
+.fldt-title-wrapper-mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fldt-title-main-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--secondary-color);
+  margin-top: -8px;
+  font-weight: bolder;
+  padding: 5px 0 5px 0;
+}
+
+.fldt-title-price-mobile{
+  font-weight: bolder;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fldt-title-price-span.ttpr-mobile{
+  background: rgb(117, 255, 133);
+  color: rgb(0, 114, 13);
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+}
+
+.buttons-wrapper-mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.buttons-first-row{
+  display: flex;
+}
+
+
+.button-mobile{
+  background: var(--secondary-color);
+  padding: 10px;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-mobile:active{
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.button-mobile:nth-of-type(2){
+  margin-left: 10px;
+}
+
+.button-mobile.second-row{
+  margin-top: 10px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+
+@media (width > 450px) {
+  .fldt-title-wrapper-mobile{
+    display: none;
+  }
+
+  .buttons-wrapper-mobile{
+    display: none;
+  }
+}
+
 @media (width < 450px) {
   .buttons-wrapper, .fldt-title-wrapper{
     display: none;
