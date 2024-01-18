@@ -4,15 +4,18 @@ import "./Cards.css";
 import { Link } from "react-router-dom";
 
 const Cards = () => {
+
+  const slicedFlats = flats.slice(0, 6);
+
   return (
     <div className="cards-wrapper">
-      {flats.map((flat) => (
+      {slicedFlats.map((flat) => (
         <Link to={`/flats/${flat.id}`} key={flat.id} className="card">
           <img
             className="flat-img"
             src={flat.img}
             alt="wrong link"
-            height="200px"
+            height="203px"
             width="100%"
           />
           <p className="flat-region"> {flat.region} </p>

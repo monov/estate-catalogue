@@ -9,8 +9,7 @@
 .card{
   margin-top: 2.5rem;
   position: relative;
-  /* height: 26rem; */
-  width: 24rem;
+  width: 360px;
   cursor: pointer;
   margin-left: 2rem;
   text-decoration: none;
@@ -54,6 +53,7 @@
   border-radius: 5px;
   border: solid 1px var(--secondary-color);
   /* box-shadow: 0 0 8px #1f1f1f; */
+  object-fit: cover;
 }
 
 
