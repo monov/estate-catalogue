@@ -65,7 +65,7 @@
   background: #1c7b63d1;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  height: .001px;
+  height: 1px;
   transition: .2s;
   display: flex;
   align-items: center;
@@ -75,11 +75,11 @@
   overflow: hidden;
 }
 
-.mobilenav-menu li:nth-of-type(1){
+.link-mobile:nth-of-type(1){
   margin-top: 0;
 }
 
-.mobilenav-menu li{
+.link-mobile{
   height: 30px;
   width: 140px;
   border-radius: 5px;
@@ -91,9 +91,10 @@
   font-weight: 600;
   transition: .2s;
   color: #fff;
+  text-decoration: none;
 }
 
-.mobilenav-menu li:hover{
+.link-mobile:hover{
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -102,6 +103,14 @@
   width: 100%;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.mobilenav-menu.open .link-mobile {
+  display: flex;
+}
+
+.mobilenav-menu .link-mobile {
+  display: none;
 }
 
 @media (width < 1040px){

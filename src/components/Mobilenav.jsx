@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Mobilenav.css";
+import { Link } from "react-router-dom";
 
 const Mobilenav = () => {
   const [isHamOpen, setIsHamOpen] = useState(false);
@@ -22,11 +23,11 @@ const Mobilenav = () => {
         </div>
       </div>
       <div className={isHamOpen ? "mobilenav-menu open" : "mobilenav-menu"}>
-        <li>Все квартиры</li>
-        <li>По районам</li>
-        <li>Продавцу</li>
-        <li>О нас</li>
-        <li>Контакты</li>
+        <Link className="link-mobile" to={"/allflats"}>Все квартиры</Link>
+        <a className="link-mobile" href="#">По районам</a>
+        <a className="link-mobile" href="#">Продавцу</a>
+        <a className="link-mobile" href="#">О нас</a>
+        <a className="link-mobile" href="#">Контакты</a>
       </div>
     </div>
   );
