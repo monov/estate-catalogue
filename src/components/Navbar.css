@@ -27,7 +27,7 @@
   justify-content: center;
 }
 
-.navbar-list li {
+.navbar-list-link{
   height: 40px;
   width: 150px;
   display: flex;
@@ -39,9 +39,10 @@
   cursor: pointer;
   transition: .2s;
   color: #fff;
+  text-decoration: none;
 }
 
-.navbar-list li:hover {
+.navbar-list-link:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 

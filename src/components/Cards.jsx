@@ -1,15 +1,17 @@
 import React from "react";
 import flats from "../data/db.js";
 import "./Cards.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Cards = () => {
+  const location = useLocation();
+  const isRouteA = location.pathname === "/allflats";
 
-  const slicedFlats = flats.slice(0, 6);
+  const flatsToRender = isRouteA ? flats : flats.slice(0, 6);
 
   return (
     <div className="cards-wrapper">
-      {slicedFlats.map((flat) => (
+      {flatsToRender.map((flat) => (
         <Link to={`/flats/${flat.id}`} key={flat.id} className="card">
           <img
             className="flat-img"
