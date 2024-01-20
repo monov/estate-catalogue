@@ -587,6 +587,7 @@
     flex-direction: column;
     padding: 0;
     justify-content: unset;
+    padding-bottom: 50px;
   }
 
   .fldt-moreinfo-body{
