@@ -564,6 +564,8 @@
 
   .contact-us{
     flex-direction: column;
+    padding: 0;
+    align-items: center;
   }
 
   .buttons-wrapper, .fldt-title-wrapper{
@@ -596,12 +598,6 @@
 
   .fldt-moreinfo.apartment{
     width: 300px;
-  }
-
-  .contact-us{
-    padding: 0;
-    align-items: center;
-    justify-content: center;
   }
 
   .our-agent{
