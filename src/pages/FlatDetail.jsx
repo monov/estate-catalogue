@@ -28,7 +28,7 @@ const FlatDetail = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     window.addEventListener("resize", handleResize);
 

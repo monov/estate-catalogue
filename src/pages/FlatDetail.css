@@ -393,7 +393,6 @@
 .fldt-moreinfo-body{
   width: 100%;
   display: flex;
-  justify-content: center;
   padding: 50px;
   align-items: center;
 }
@@ -410,6 +409,7 @@
   border-radius: 5px;
   padding: 20px;
   margin-left: 50px;
+  margin-top: 0px;
 }
 
 .fldt-moreinfo.apartment{
@@ -586,7 +586,7 @@
   }
 
   .fldt-moreinfo-body{
-    height: 2000px;
+    height: 1900px;
   }
 
   .fldt-moreinfo{

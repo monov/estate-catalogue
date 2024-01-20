@@ -12,7 +12,7 @@ const Mobilenav = () => {
   return (
     <div className="mobilenav">
       <div className="mobilenav-body">
-        <div className="mobilenav-logo"></div>
+        <a href="/" className="mobilenav-logo"></a>
         <div
           className={isHamOpen ? "mobilenav-ham open" : "mobilenav-ham"}
           onClick={hamClickHandle}
