@@ -538,6 +538,30 @@
   background: #1f1f1f;
 }
 
+.currency-2{
+  line-height:24px;
+  font-size: 14px;
+  font-family:sans-serif;
+}
+
+.drop-2{
+  background: white;
+  border-radius: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-shadow: inset 0 0 3px #000;
+  border: none;
+}
+
+.cur-txt-2{
+  font-size: 16px;
+}
+
+.cur-txt-2-span{
+  font-size: 13px;
+  color: #3f3f3f;
+}
+
 @media (width > 450px) {
   .fldt-title-wrapper-mobile{
     display: none;

@@ -20,6 +20,10 @@ const CustomNextArrow = ({ onClick }) => (
   </div>
 );
 
+function formatstuff(text) {
+  return text.toLocaleString("en-US").replace(/,/g, ` `);
+}
+
 const FlatDetail = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -65,6 +69,27 @@ const FlatDetail = () => {
     },
   };
 
+  const apiUrl =
+    "https://v6.exchangerate-api.com/v6/b1e819dad6a4c0e74972aa9d/latest/USD";
+
+  const [pricetext, setPricetext] = useState(flat.price)
+  const [ratiotext, setRatiotext] = useState(Math.floor(pricetext / flat.area))
+  const [currency, setCurrency] = useState("USD")
+  async function askconvert(event) {
+    if (event.target.value === "uzs") {
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      setPricetext(formatstuff(Math.round(parseInt(data.conversion_rates["UZS"])) * flat.price))
+      let priceuzs = Math.round(parseInt(data.conversion_rates["UZS"])) * flat.price;
+      setRatiotext(Math.floor(priceuzs / flat.area))
+      setCurrency("UZS")
+    } else if (event.target.value === "usd"){
+      setPricetext(formatstuff(flat.price))
+      setRatiotext(formatstuff(Math.floor(flat.price / flat.area)))
+      setCurrency("USD")
+    }
+  }
+
   if (!flat) {
     return <p>Flat not found</p>;
   }
@@ -83,9 +108,9 @@ const FlatDetail = () => {
         <div className="fldt-title-wrapper">
           <div className="fldt-title-main">{flat.name}</div>
           <div className="fldt-title-price">
-            {flat.price} USD -&nbsp;
+            {formatstuff(flat.price)} USD -&nbsp;
             <span className="fldt-title-price-span">
-              {Math.round(flat.price / flat.area)} USD/m2
+              {formatstuff(Math.round(flat.price / flat.area))} USD/m2
             </span>
           </div>
         </div>
@@ -157,6 +182,15 @@ const FlatDetail = () => {
       <section className="fldt-moreinfo-body">
         <div className="fldt-moreinfo price">
           <p className="fldt-moreinfo-p-title">Цена</p>
+          <div className="currency-2">
+            <div className="cur-txt-2">
+              {pricetext} {currency} - <span className="cur-txt-2-span">{ratiotext} {currency}/m2</span>
+            </div>
+            <select className="drop-2" onChange={askconvert}>
+              <option value="usd">USD</option>
+              <option value="uzs">UZS</option>
+            </select>
+          </div>
           {flat.additionalInfo.price.map((item) => {
             return <p>{item}</p>;
           })}
@@ -197,7 +231,11 @@ const FlatDetail = () => {
           </div>
         </div>
         <div className="input-contact-wrapper">
-          <input type="text" placeholder="Ваш номер телефона" className="fldt-input"/>
+          <input
+            type="text"
+            placeholder="Ваш номер телефона"
+            className="fldt-input"
+          />
           <button className="fldt-send-button">Отправить</button>
         </div>
       </section>
