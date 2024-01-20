@@ -7,11 +7,11 @@ const Footer = () => {
       <div className="footer-logo"></div>
       <div className="footer-nav">
         <div className="footer-nav-menu">
-          <a href="">Все квартиры</a>
+          <a href="/allflats">Все квартиры</a>
           <a href="">По районам</a>
           <a href="">Продавцу</a>
-          <a href="">О нас</a>
-          <a>Контакты</a>
+          <a href="#whyus">О нас</a>
+          <a href="#contacts">Контакты</a>
         </div>
         <p>OOO "VIP UYLAR"</p>
       </div>

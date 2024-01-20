@@ -120,7 +120,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="home-whyus">
+      <section className="home-whyus" id="whyus">
         <h1 className="whyus-text">Почему мы?</h1>
         <p className="whyus-text-p">
           4 причины покупать квартиры вместе c нами
@@ -137,7 +137,7 @@ const Home = () => {
           })}
         </div>
       </section>
-      <section className="home-contacts-body">
+      <section className="home-contacts-body" id="contacts">
         <div className="home-contacts">
           <h3>Мы на связи</h3>
           <p>

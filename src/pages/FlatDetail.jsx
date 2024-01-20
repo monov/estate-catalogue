@@ -28,7 +28,7 @@ const FlatDetail = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
 
     window.addEventListener("resize", handleResize);
 
@@ -153,7 +153,7 @@ const FlatDetail = () => {
           </div>
         </div>
       </section>
-      <div className="space"></div>
+      {/* <div className="space"></div> */}
       <section className="fldt-moreinfo-body">
         <div className="fldt-moreinfo price">
           <p className="fldt-moreinfo-p-title">Цена</p>
@@ -187,7 +187,7 @@ const FlatDetail = () => {
           </div>
         </div>
       </section>
-      <div className="space"></div>
+      {/* <div className="space"></div> */}
       <section className="contact-us">
         <div className="our-agent">
           <div className="pfp"></div>
@@ -195,6 +195,10 @@ const FlatDetail = () => {
             <p className="agent-name-p">Саидислом Ходжаев</p>
             <p>С радостью проконсультирую вас по данной квартире</p>
           </div>
+        </div>
+        <div className="input-contact-wrapper">
+          <input type="text" placeholder="Ваш номер телефона" className="fldt-input"/>
+          <button className="fldt-send-button">Отправить</button>
         </div>
       </section>
       <div className="space"></div>
