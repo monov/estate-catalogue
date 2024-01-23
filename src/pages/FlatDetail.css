@@ -1,3 +1,10 @@
+.Slider{
+  background: url(/imgs/bg2.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
 .slick-arrow {
   z-index: 1;
 }
@@ -121,7 +128,7 @@
   width: 450px;
   justify-content: space-between;
   right: 50px;
-  bottom: 50px;
+  bottom: 40px;
 }
 
 .button{
@@ -152,7 +159,7 @@
 .fldt-title-wrapper{
   position: absolute;
   z-index: 1;
-  top: 20px;
+  top: 55px;
   left: 20px;
   box-shadow: 0 0 8px #1f1f1f;
   border-radius: 5px;
@@ -162,7 +169,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 40px;
   padding: 10px;
   border-radius: 5px 5px 0 0;
   background: rgba(216, 158, 26, 0.8);
@@ -179,7 +186,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 40px;
   padding: 10px;
   border-radius: 0 0 5px 5px;
   backdrop-filter: blur(100px);
@@ -393,8 +400,8 @@
 .fldt-moreinfo-body{
   width: 100%;
   display: flex;
-  padding: 50px;
-  align-items: center;
+  padding: 70px;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -611,11 +618,12 @@
     flex-direction: column;
     padding: 0;
     justify-content: unset;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
   }
 
   .fldt-moreinfo-body{
     height: auto;
+    align-items: center;
   }
 
   .fldt-moreinfo{
@@ -658,5 +666,4 @@
   .our-agent-text{
     margin-left: 0;
   }
-  
 }

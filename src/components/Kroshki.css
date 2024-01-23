@@ -1,0 +1,29 @@
+.kroshki-body{
+  height: 35px;
+  width: 100%;
+  background: #1f1f1fcf;
+  position: fixed;
+  margin-top: 80px;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  border-bottom: solid 2px #2f2f2fee;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #fff;
+}
+
+.kroshki-link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.kroshki-body.kroshki{
+  margin-top: 0;
+}
+
+.kroshki-nomer{
+  position: absolute;
+  right: 40px;
+  color: #fff;
+}

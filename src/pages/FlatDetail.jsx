@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "./FlatDetail.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Contactus from "../components/Contactus.jsx";
+import Navbar from "../components/Navbar.jsx";
+import Kroshki from "../components/Kroshki.jsx";
 
 const CustomPrevArrow = ({ onClick }) => (
   <div className="custom-prev-arrow" onClick={onClick}>
@@ -95,7 +97,9 @@ const FlatDetail = () => {
   }
 
   return (
-    <div>
+    <>
+    <Kroshki />
+    <div className="fldt-main-body">
       <Contactus />
       <section>
         <div className="buttons-wrapper">
@@ -114,14 +118,15 @@ const FlatDetail = () => {
             </span>
           </div>
         </div>
-        <Slider ref={sliderRef} {...settings}>
+        <Slider className="Slider" ref={sliderRef} {...settings}>
           {flat.pics.map((item, index) => (
             <div key={index}>
               <div
                 style={{
                   background: `url(${item}.jpg)`,
                   backgroundPosition: "center",
-                  backgroundSize: "cover",
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
                   height: windowWidth < 450 ? "40vh" : "100vh",
                   width: "100%",
                 }}
@@ -241,6 +246,8 @@ const FlatDetail = () => {
       </section>
       <div className="space"></div>
     </div>
+    </>
+    
   );
 };
 

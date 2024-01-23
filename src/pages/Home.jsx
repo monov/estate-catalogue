@@ -141,16 +141,18 @@ const Home = () => {
         <div className="home-contacts">
           <h3>Мы на связи</h3>
           <p>
-            +998 78 113 0887 <br />
-            info@vipflat.uz <br />
-            БЦ "Asrtec"
+            Мы работаем с 9 утра до 6 вечера <br />с понедельника по пятницу
             <br />
-            Ташкент, ул. Афросиаб, 4А
+            Телефон: +998 (78) 113-08-87
+            <br />
+            Email: info@vipestate.uz <br />
+            100047, Узбекистан, Ташкент,
+            <br /> улица Шахрисабз, д.1Б, 2 этаж
           </p>
           <div className="home-contacts-socials">
-            <FaInstagram  className="home-socials-icon"/>
-            <FaFacebookF className="home-socials-icon"/>
-            <FaTelegramPlane className="home-socials-icon"/>
+            <FaInstagram className="home-socials-icon" />
+            <FaFacebookF className="home-socials-icon" />
+            <FaTelegramPlane className="home-socials-icon" />
           </div>
         </div>
       </section>
