@@ -146,6 +146,8 @@
   cursor: pointer;
   text-align: center;
   transition: .2s;
+  text-decoration: none;
+  display: inline-table;
 }
 
 .button:hover{
@@ -490,6 +492,12 @@
   justify-content: center;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.button-mobile.p{
+  margin-left: 0px;
 }
 
 .button-mobile:active{
@@ -497,9 +505,6 @@
   color: #fff;
 }
 
-.button-mobile:nth-of-type(2){
-  margin-left: 10px;
-}
 
 .button-mobile.second-row{
   margin-top: 10px;
