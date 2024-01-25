@@ -11,6 +11,7 @@ const Kroshki = () => {
   const pathSegments = location.pathname
     .split("/")
     .filter((segment) => segment !== "");
+  
   return (
     <div className={isKroshki ? "kroshki-body kroshki" : "kroshki-body"}>
       {pathSegments.length === 0 ? (

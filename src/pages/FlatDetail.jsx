@@ -118,7 +118,7 @@ const FlatDetail = () => {
             </span>
           </div>
         </div>
-        <Slider className="Slider" ref={sliderRef} {...settings}>
+        <Slider className={windowWidth < 450 ? "Slider mobile" : "Slider"} ref={sliderRef} {...settings}>
           {flat.pics.map((item, index) => (
             <div key={index}>
               <div

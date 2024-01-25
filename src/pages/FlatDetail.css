@@ -5,6 +5,10 @@
   height: 100vh;
 }
 
+.Slider.mobile{
+  height: 40vh;
+}
+
 .slick-arrow {
   z-index: 1;
 }
@@ -444,7 +448,7 @@
   justify-content: center;
   text-align: center;
   background: var(--secondary-color);
-  margin-top: -8px;
+  margin-top: 0px;
   font-weight: bolder;
   padding: 5px 0 5px 0;
 }
