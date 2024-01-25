@@ -26,9 +26,9 @@ const Kroshki = () => {
                 segment == "allflats" ? " Все квартиры" : console.log(segment)
               ) : (
                 // Display other segments with a link and add " >" after them
-                <Link className="kroshki-link" to={`/${pathSegments.slice(0, index + 1).join('/')}`}>  
+                <div className="kroshki-link" >  
                   &nbsp;Квартира
-                </Link>
+                </div>
               )}
             </React.Fragment>
           ))}
