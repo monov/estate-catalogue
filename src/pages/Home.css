@@ -194,11 +194,38 @@ section{
   color: #fff;
 }
 
+.home-contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.home-contacts-in{
+  padding: 30px;
+  border-radius: 5px;
+  width: 400px;
+  background: #111111;
+  box-shadow: inset 5px 5px 10px #070707,
+              inset -5px -5px 10px #1b1b1b;
+}
+
+.g-map{
+  width: 50%;
+  height: 100%;
+}
+
+.map-in{
+  border: none;
+  border-radius:0 0 0 100px;
+}
+
 .home-contacts-body{
-  height: 300px;
+  height: 450px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: #111;
 }
 

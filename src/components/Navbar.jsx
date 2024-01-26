@@ -13,9 +13,17 @@ const Navbar = () => {
           <Link className="navbar-list-link" to={"/allflats"}>
             Все квартиры
           </Link>
-          <a href="#" className="navbar-list-link">
+
+          <div class="navbar-list-link select">
             По районам
-          </a>
+            <div class="dropdown-content">
+              <a href="#">Яккасарайский</a>
+              <a href="#">Мирабадский</a>
+              <a href="#">Шайхонтохурский</a>
+              <a href="#">Юнусабадский</a>
+              <a href="#">Мирзо-Улугбекский</a>
+            </div>
+          </div>
           <a href="#" className="navbar-list-link">
             Продавцу
           </a>

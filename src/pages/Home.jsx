@@ -139,21 +139,32 @@ const Home = () => {
       </section>
       <section className="home-contacts-body" id="contacts">
         <div className="home-contacts">
-          <h3>Мы на связи</h3>
-          <p>
-            Мы работаем с 9 утра до 6 вечера <br />с понедельника по пятницу
-            <br />
-            Телефон: +998 (78) 113-08-87
-            <br />
-            Email: info@vipestate.uz <br />
-            100047, Узбекистан, Ташкент,
-            <br /> улица Шахрисабз, д.1Б, 2 этаж
-          </p>
-          <div className="home-contacts-socials">
-            <FaInstagram className="home-socials-icon" />
-            <FaFacebookF className="home-socials-icon" />
-            <FaTelegramPlane className="home-socials-icon" />
+          <div className="home-contacts-in">
+            <h3>Мы на связи</h3>
+            <p>
+              Мы работаем с 9 утра до 6 вечера <br />с понедельника по пятницу
+              <br />
+              Телефон: +998 (78) 113-08-87
+              <br />
+              Email: info@vipestate.uz <br />
+              100047, Узбекистан, Ташкент,
+              <br /> улица Шахрисабз, д.1Б, 2 этаж
+            </p>
+            <div className="home-contacts-socials">
+              <FaInstagram className="home-socials-icon" />
+              <FaFacebookF className="home-socials-icon" />
+              <FaTelegramPlane className="home-socials-icon" />
+            </div>
           </div>
+        </div>
+        <div className="g-map">
+          <iframe
+            className="map-in"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d187.30965583242957!2d69.28754230210205!3d41.30985357523912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1706275344199!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
       <Footer />
