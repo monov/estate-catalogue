@@ -25,9 +25,9 @@ const Footer = () => {
       <div className="ftr-objects rekv">
         <span>Реквизиты:</span> ООО "VIP UYLAR"
         <br /> <span>ИНН:</span> 310382762 <br />{" "}
-        <span>Юридический адрес:</span> Toshkent viloyati, Angren sh.,
-        Mustaqillik mahallasi, Bunyodkor ko'chasi, 13-uy, 29-xonadon <br />{" "}
-        <span>р/с:</span> 20208000405639801001 Яшнабадский филиал АКБ
+        <span>Юридический адрес:</span> Toshkent <br />viloyati, Angren sh.,
+        Mustaqillik<br /> mahallasi, Bunyodkor ko'chasi, <br />13-uy, 29-xonadon <br />{" "}
+        <span>р/с:</span> 20208000405639801001 <br />Яшнабадский филиал АКБ<br />
         "Узпромстройбанк"
       </div>
       <div className="ftr-objects cntcts">
@@ -37,7 +37,7 @@ const Footer = () => {
               <SlPhone className="ftr-ico"/>
             </div>
             <div>
-              +998 (78) 113-08-87 <br />С 09:00 до 18:00
+              <span>+998 (78) 113-08-87</span> <br />С 09:00 до 18:00
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
           <div>
             Адрес <br />
-            100047, Узбекистан, Ташкент, улица Шахрисабз, д.1Б, 2 этаж
+            100047, Узбекистан, Ташкент,<br /> улица Шахрисабз, д.1Б, 2 этаж
           </div>
         </div>
       </div>

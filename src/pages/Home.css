@@ -37,14 +37,14 @@ section{
 .home-text-gallery{
   height: 70vh;
   width: 100%;
-  background: #414042;
+  background: var(--main-color);
   display: flex;
 }
 
 .home-text-gallery-txt{
   width: 50%;
   height: 100%;
-  background: transparent;
+  background: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,6 +99,30 @@ section{
 .home-glr-slide.hidden{
   display: none;
 }
+
+.seemore{
+  margin-top: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .2s;
+}
+
+.seemore::after{
+  content: "";
+  width: 140px;
+  height: 2px;
+  background: var(--main-color);;
+  transform: scaleX(0.1);
+  transition: .2s;
+  transform-origin: left;
+}
+
+.seemore:hover::after{
+  transform: scaleX(1);
+}
+
 
 .arrow{
   position: absolute;
@@ -205,10 +229,7 @@ section{
 .home-contacts-in{
   padding: 30px;
   border-radius: 5px;
-  width: 400px;
-  background: #111111;
-  box-shadow: inset 5px 5px 10px #070707,
-              inset -5px -5px 10px #1b1b1b;
+  width: 76%;
 }
 
 .g-map{
@@ -218,30 +239,37 @@ section{
 
 .map-in{
   border: none;
-  border-radius:0 0 0 100px;
 }
 
 .home-contacts-body{
-  height: 450px;
+  height: 560px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #111;
+  background: var(--main-color);
   border-radius: 20px 20px 0 0;
-  border-top: solid 2px #111;
-  border-right: solid 2px #111;
+  border-top: solid 2px var(--main-color);
+  border-right: solid 2px var(--main-color);
 }
 
 .home-socials-icon{
   margin-top: 1.6rem;
-  margin-left: 10px;
   height: 40px;
-  width: 40px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
   cursor: pointer;
   background: #d89e1a;
-  border-radius: 100%;
-  fill: #fff;
+  border-radius: 5px;
+  color: #fff;
+  transition: .2s;
+  font-weight: 600;
+}
+
+.home-socials-icon:hover{
+  background: #1f1f1f;
 }
 
 /* .home-socials-icon:nth-of-type(1){
@@ -255,6 +283,29 @@ section{
 .home-socials-icon:nth-of-type(3){
   fill: #0088cc;
 } */
+
+.home-contacts-in p:nth-of-type(1){
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-family: "main-app-bold";
+}
+
+.home-contacts-in p:nth-of-type(2){
+  font-size: 20px;
+}
+
+.home-contacts-in p span{
+  font-weight: bolder;
+  color: #fff;
+}
+
+.hm-line{
+  height: 1.5px;
+  background: #ffffff2f;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 @media (width > 1920px) {
   .home-whyus{
@@ -364,7 +415,7 @@ section{
   }
   .home-contacts-body{
     flex-direction: column;
-    height: 700px;
+    height: 900px;
     margin-top: 2rem;
   }
   .g-map{
