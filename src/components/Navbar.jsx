@@ -34,8 +34,10 @@ const Navbar = () => {
             Контакты
           </a>
         </div>
+        <a className="nav-phone" href="tel:+998781130887">+998 (78) 113-08-87</a>
+
       </div>
-      <Kroshki />
+
     </>
   );
 };

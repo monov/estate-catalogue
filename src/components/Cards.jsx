@@ -12,7 +12,7 @@ const Cards = () => {
   return (
     <div className="cards-wrapper">
       {flatsToRender.map((flat) => (
-        <Link to={`/flats/${flat.id}`} key={flat.id} className="card">
+        <Link to={`/allflats/${flat.id}`} key={flat.id} className="card">
           <img
             className="flat-img"
             src={flat.img}

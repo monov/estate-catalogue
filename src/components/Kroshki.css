@@ -1,25 +1,40 @@
 .kroshki-body{
   height: 35px;
   width: 100%;
-  background: #1f1f1fcf;
   margin-top: 80px;
   z-index: 10;
   backdrop-filter: blur(10px);
-  border-bottom: solid 2px #2f2f2fee;
   display: flex;
   align-items: center;
   padding-left: 40px;
-  color: #fff;
 }
 
-.kroshki-link{
+.kroshki-body.kroshki .kroshki-link{
   color: #fff;
   text-decoration: none;
+  transition: .1s;
+  
+}
+
+.kroshki-body  > .kroshki-link{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.kroshki-body > .kroshki-link:hover{
+  color: var(--main-color);
+}
+
+.kroshki-body.kroshki .kroshki-link:hover{
+  color: var(--secondary-color);
 }
 
 .kroshki-body.kroshki{
   margin-top: 0;
   position: fixed;
+  background: #1f1f1fcf;
+  color: #fff;
+  border-bottom: solid 2px #2f2f2fee;
 }
 
 .kroshki-nomer{

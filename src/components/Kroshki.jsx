@@ -6,36 +6,24 @@ const Kroshki = () => {
   const [isKroshki, setKroshki] = useState();
   const location = useLocation();
   useEffect(() => {
-    setKroshki(location.pathname.startsWith("/flats/"));
+    setKroshki(location.pathname.startsWith("/allflats/"));
   }, [location.pathname]);
-  const pathSegments = location.pathname
-    .split("/")
-    .filter((segment) => segment !== "");
-  
+  const path = location.pathname.split("/").filter((i) => i !== "");
+  let burl = path[0];
+  let zameni = {
+    "allflats" : "Все квартиры",
+  }
+  for (let i = 1; i <= 20; i++) {
+    zameni[i.toString()] = "Квартира";
+}
+
   return (
     <div className={isKroshki ? "kroshki-body kroshki" : "kroshki-body"}>
-      {pathSegments.length === 0 ? (
-        <span className="kroshki-link">Главная страница</span>
-      ) : (
-        <>
-          <Link className="kroshki-link" to="/">Главная страница</Link>&nbsp;&gt; 
-          {pathSegments.map((segment, index) => (
-            <React.Fragment key={segment}>
-              {index === pathSegments.length - 1 ? (
-                // Display the last segment without a link
-                segment == "allflats" ? " Все квартиры" : console.log(segment)
-              ) : (
-                // Display other segments with a link and add " >" after them
-                <div className="kroshki-link" >  
-                  &nbsp;Квартира
-                </div>
-              )}
-            </React.Fragment>
-          ))}
-        </>
-      )}
-
-      <div className="kroshki-nomer">Наш номер телефона: 90-102-10-31</div>
+      <Link className="kroshki-link" to={"/"}>Главная&#32;</Link>
+      {path.map((item, index) => {
+        burl = path.slice(0, index + 1).join('/');
+        return <Link className="kroshki-link" to={`/${burl}`}>&#32;&#62;&#32;{zameni[item]}</Link>;
+      })}
     </div>
   );
 };

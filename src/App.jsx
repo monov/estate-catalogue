@@ -4,16 +4,15 @@ import Home from "./pages/Home";
 import FlatDetail from "./pages/FlatDetail";
 import AllFlats from "./pages/AllFlats";
 
-
 function App() {
   return (
     <Router>
       <div className="app">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/flats/:flatId" element={<FlatDetail />} />
-        <Route path="/allflats" element={<AllFlats />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/allflats" element={<AllFlats />}/>
+          <Route path="/allflats/:flatId" element={<FlatDetail />} />
+        </Routes>
       </div>
     </Router>
   );

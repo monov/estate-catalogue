@@ -9,6 +9,7 @@ import { FaInstagram, FaFacebookF, FaTelegramPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import flats from "../data/db";
 import Contactus from "../components/Contactus";
+import Kroshki from "../components/Kroshki";
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -65,7 +66,6 @@ const Home = () => {
       <Navbar />
       <Contactus />
       <Mobilenav />
-
       <section className="home-cards-body-wrapper">
         <div className="home-cards-body">
           <h1>Поможем продать и купить элитные квартиры в Ташкенте </h1>
