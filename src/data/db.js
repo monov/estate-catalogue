@@ -10,10 +10,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card1/a.jpg",
     pics: [
       "/cards/card1/a",
@@ -94,10 +92,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card2/f.jpg",
     pics: [
       "/cards/card2/a",
@@ -178,10 +174,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: `/cards/card3/i.jpg`,
     pics: [
       "/cards/card3/a",
@@ -262,10 +256,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card4/a.jpg",
     pics: [
       "/cards/card4/a",
@@ -345,10 +337,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card5/a.jpg",
     pics: [
       "/cards/card5/a",
@@ -426,10 +416,8 @@ let flats = [
     level: "2",
     levels: "8",
     remont: "После ремонта",
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card6/b.jpg",
     pics: [
       "/cards/card6/a",
@@ -510,10 +498,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card7/a.jpg",
     pics: [
       "/cards/card7/a",
@@ -594,10 +580,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card8/a.jpg",
     pics: [
       "/cards/card8/a",
@@ -678,10 +662,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card9/a.jpg",
     pics: [
       "/cards/card9/a",
@@ -762,10 +744,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card10/a.jpg",
     pics: [
       "/cards/card10/a",
@@ -846,10 +826,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card11/a.jpg",
     pics: [
       "/cards/card11/a",
@@ -930,10 +908,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card12/a.jpg",
     pics: [
       "/cards/card12/a",
@@ -1014,10 +990,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card13/a.jpg",
     pics: [
       "/cards/card13/a",
@@ -1098,10 +1072,8 @@ let flats = [
     levels: "8",
     remont: "После ремонта",
 
-    bio: `дается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале Продается четырехкомнатная квартира на первом этаже четырехэтажного дома.
-    Находится она в Юнусабадском районе, тринадцатом квартале.`,
+    bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+`,
     img: "/cards/card14/a.jpg",
     pics: [
       "/cards/card14/a",

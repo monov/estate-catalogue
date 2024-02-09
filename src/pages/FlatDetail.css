@@ -374,7 +374,7 @@
 .pfp{
   height: 150px;
   width: 150px;
-  background: url(/imgs/islam.png);
+  background: var(--secondary-color);
   background-position: center;
   background-size: 110%;
   border: solid 2px var(--secondary-color);

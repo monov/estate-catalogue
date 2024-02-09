@@ -6,7 +6,7 @@ const Kroshki = () => {
   const [isKroshki, setKroshki] = useState();
   const location = useLocation();
   useEffect(() => {
-    setKroshki(location.pathname.startsWith("/allflats/"));
+    setKroshki(location.pathname.match(/^\/\d+/));
   }, [location.pathname]);
   const path = location.pathname.split("/").filter((i) => i !== "");
   let burl = path[0];

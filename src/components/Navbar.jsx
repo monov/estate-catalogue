@@ -10,10 +10,6 @@ const Navbar = () => {
         <a href="/" className="navbar-logo"></a>
 
         <div className="navbar-list">
-          <Link className="navbar-list-link" to={"/allflats"}>
-            Все квартиры
-          </Link>
-
           <div class="navbar-list-link select">
             По районам
             <div class="dropdown-content">

@@ -116,6 +116,12 @@
   right: 100px;
   text-decoration: none;
   color: #fff;
+  transition: .1s;
+}
+
+.nav-phone:hover{
+  color: #fdcb39;
+  transform: scale(1.2);
 }
 
 @media (width < 1040px) {

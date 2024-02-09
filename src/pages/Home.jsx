@@ -61,6 +61,11 @@ const Home = () => {
     },
   ];
 
+  const [showMore, setShowMore] = useState(3);
+  const seeMoreClick = () => {
+    setShowMore(showMore + 6)
+  }
+
   return (
     <div>
       <Navbar />
@@ -73,10 +78,10 @@ const Home = () => {
         </div>
 
         <div className="home-cards">
-          <Cards />
+          <Cards showMore={showMore} setShowMore={setShowMore}/>
         </div>
 
-        <a className="seemore" href="/allflats">
+        <a className="seemore" onClick={seeMoreClick}>
           Смотреть больше
         </a>
       </section>

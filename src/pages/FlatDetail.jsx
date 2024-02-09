@@ -251,7 +251,7 @@ const FlatDetail = () => {
           <div className="our-agent">
             <div className="pfp"></div>
             <div className="our-agent-text">
-              <p className="agent-name-p">Саидислом Ходжаев</p>
+              <p className="agent-name-p">Name Surename</p>
               <p>С радостью проконсультирую вас по данной квартире</p>
             </div>
           </div>
