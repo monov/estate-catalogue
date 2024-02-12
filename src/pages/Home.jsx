@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import flats from "../data/db";
 import Contactus from "../components/Contactus";
 import Kroshki from "../components/Kroshki";
+import Popup from "../components/Popup";
 
 const Home = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -62,6 +63,7 @@ const Home = () => {
   ];
 
   const [showMore, setShowMore] = useState(3);
+  const [isPop, setPop] = useState(false)
   const seeMoreClick = () => {
     setShowMore(showMore + 6)
   }
@@ -71,6 +73,7 @@ const Home = () => {
       <Navbar />
       <Contactus />
       <Mobilenav />
+      <Popup isPop={isPop} setPop={setPop}/>
       <section className="home-cards-body-wrapper">
         <div className="home-cards-body">
           <h1>Поможем продать и купить элитные квартиры в Ташкенте </h1>
@@ -78,7 +81,7 @@ const Home = () => {
         </div>
 
         <div className="home-cards">
-          <Cards showMore={showMore} setShowMore={setShowMore}/>
+          <Cards setPop={setPop} showMore={showMore} setShowMore={setShowMore}/>
         </div>
 
         <a className="seemore" onClick={seeMoreClick}>

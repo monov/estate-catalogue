@@ -1,0 +1,93 @@
+.popup-wrapper{
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, .7);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-body{
+  height: 500px;
+  width: 1000px;
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.popup-pic{
+  width: 50%;
+  height: 100%;
+  background: var(--secondary-color);
+}
+
+.popup-biz{
+  width: 50%;
+  height: 100%;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.popup-biz p{
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.popup-inp-num{
+  margin-top: .2rem;
+  height: 35px;
+  font-size: 16px;
+  width: 300px;
+  border-radius: 5px;
+  border: solid 2px #bebebe;
+  padding: 10px;
+}
+
+.popup-inp-com{
+  margin-top: 1rem;
+  height: 250px;
+  border-radius: 5px;
+  border: solid 2px #bebebe;
+  padding: 10px;
+}
+
+
+.popup-biz button{
+  margin-top: 1.5rem;
+  height: 35px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 16px;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.popup-close{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 10px;
+  top: 10px;
+  fill: #1f1f1f;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.popup-close:hover{
+  fill: red;
+}
+
+.popup-wrapper.c{
+  display: none;
+}

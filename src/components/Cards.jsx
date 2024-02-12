@@ -3,16 +3,18 @@ import flats from "../data/db.js";
 import "./Cards.css";
 import { Link, useLocation } from "react-router-dom";
 
-const Cards = ({showMore, setShowMore}) => {
+const Cards = ({ showMore, setShowMore, setPop }) => {
   const location = useLocation();
   const isRouteA = location.pathname === "/allflats";
-  
-  const flatsToRender = isRouteA ? flats : flats.slice(0, showMore);
 
+  const flatsToRender = isRouteA ? flats : flats.slice(0, showMore);
+  const handlePopOpen = () => {
+    setPop(true);
+  };
   return (
     <div className="cards-wrapper">
       {flatsToRender.map((flat) => (
-        <Link to={`/${flat.id}`} key={flat.id} className="card">
+        <div key={flat.id} className="card">
           <div>
             <img
               className="flat-img"
@@ -23,7 +25,7 @@ const Cards = ({showMore, setShowMore}) => {
             />
           </div>
           <div>
-            <p className="flat-name">{flat.name}</p>
+            <Link to={`/${flat.id}`} className="flat-name">{flat.name}</Link>
             <p className="flat-price">
               {flat.price} USD -{" "}
               <span>{Math.round(flat.price / flat.area)} USD/m2</span>
@@ -39,9 +41,11 @@ const Cards = ({showMore, setShowMore}) => {
               &nbsp;{flat.region}
             </p>
             <p className="flat-desc">{flat.bio.slice(0, 200)}...</p>
-            <button className="flat-button">ЗАПИСАТЬСЯ НА ПРОСМОТР</button>
+            <button onClick={handlePopOpen} className="flat-button">
+              ЗАПИСАТЬСЯ НА ПРОСМОТР
+            </button>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );
