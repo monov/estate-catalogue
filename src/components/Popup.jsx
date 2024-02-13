@@ -8,7 +8,6 @@ const Popup = ({ isPop, setPop }) => {
     setPop(false);
   };
 
-  // Define animation variants for popup-body
   const popupBodyVariants = {
     visible: {
       y: 0,

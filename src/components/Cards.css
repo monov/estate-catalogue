@@ -62,6 +62,9 @@
   border: solid 1px var(--secondary-color);
   /* box-shadow: 0 0 8px #1f1f1f; */
   object-fit: cover;
+  height: 207px;
+  width: 400px;
+  background: linear-gradient(110deg, #fdcb39 , var(--secondary-color));
 }
 
 .flat-p-row{
@@ -85,8 +88,82 @@
   background: #fdcb39;
 }
 
+.slider-card{
+  height: 100%;
+  width: 100%;
+}
+
+.slick-list, .slick-track{
+  height: 100%;
+  width: 100%;
+}
+
+
 .flat-name:hover{
   color: #fdcb39;
+}
+
+.custom-prev-arrow-c, .custom-next-arrow-c {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  background: transparent;
+  -webkit-backdrop-filter: blur(10px);
+
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  transition: .2s;
+  box-shadow: 0 0 8px #1f1f1f;
+  cursor: pointer;
+}
+
+.custom-prev-arrow-c:hover, .custom-next-arrow-c:hover{
+  background: rgba(255, 255, 255, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-prev-arrow-c {
+  left: 10px;
+}
+
+.custom-next-arrow-c {
+  right: 10px;
+}
+
+.custom-dot-c{
+  height: 8px;
+  width: 8px;
+  border: solid .5px;
+  margin: 0px;
+  background-color: rgba(147, 147, 147, 0);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+  border: solid 2px rgba(0, 0, 0, 0.2);
+}
+
+.slick-active .custom-dot-c{
+  background-color: #d89f1ab1;
+  backdrop-filter: blur(100px);
+  border: solid 4px var(--secondary-color);
+}
+
+.slick-slide div{
+  height: 100%;
+  width: 100%;
 }
 
 @media (width < 800px) {
