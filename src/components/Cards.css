@@ -19,7 +19,7 @@
   margin-left: 0;
   justify-content: space-between;
   background: #fff;
-  padding: 10px;
+
 }
 
 .flat-name{
@@ -59,12 +59,11 @@
 
 .flat-img{
   border-radius: 5px;
-  border: solid 1px var(--secondary-color);
   /* box-shadow: 0 0 8px #1f1f1f; */
   object-fit: cover;
-  height: 207px;
+  height: 100%;
   width: 400px;
-  background: linear-gradient(110deg, #fdcb39 , var(--secondary-color));
+
 }
 
 .flat-p-row{
@@ -91,6 +90,7 @@
 .slider-card{
   height: 100%;
   width: 100%;
+  background: #fff;
 }
 
 .slick-list, .slick-track{
@@ -104,17 +104,11 @@
 }
 
 .custom-prev-arrow-c, .custom-next-arrow-c {
-  height: 35px;
-  width: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   z-index: 1;
-  backdrop-filter: blur(10px);
-  background: transparent;
-  -webkit-backdrop-filter: blur(10px);
-
   height: 30px;
   width: 30px;
   border-radius: 100%;
@@ -125,13 +119,12 @@
   transform: translateY(-50%);
   font-size: 30px;
   transition: .2s;
-  box-shadow: 0 0 8px #1f1f1f;
   cursor: pointer;
+
 }
 
-.custom-prev-arrow-c:hover, .custom-next-arrow-c:hover{
-  background: rgba(255, 255, 255, 0.28);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.custom-arrow-c-a{
+  fill: #585858;
 }
 
 .custom-prev-arrow-c {
@@ -152,7 +145,7 @@
   cursor: pointer;
   transition: 0.3s;
   backdrop-filter: blur(10px);
-  border: solid 2px rgba(0, 0, 0, 0.2);
+  border: solid 2px rgba(0, 0, 0, 0.1);
 }
 
 .slick-active .custom-dot-c{
@@ -164,6 +157,11 @@
 .slick-slide div{
   height: 100%;
   width: 100%;
+}
+
+.slider-card .slick-dots li{
+  margin: 0;
+  width: 15px;
 }
 
 @media (width < 800px) {

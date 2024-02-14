@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
 import flats from "../data/db.js";
-import "./Cards.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { MdArrowForwardIos,MdArrowBackIos  } from "react-icons/md";
+import "./Cards.css";
+
 import { Link, useLocation, useParams } from "react-router-dom";
 
 const Cards = ({ showMore, setShowMore, setPop }) => {
@@ -18,13 +20,13 @@ const Cards = ({ showMore, setShowMore, setPop }) => {
 
   const CustomPrevArrow = ({ onClick }) => (
     <div className="custom-prev-arrow-c" onClick={onClick}>
-      <IoIosArrowBack />
+      <IoIosArrowBack className="custom-arrow-c-a"/>
     </div>
   );
 
   const CustomNextArrow = ({ onClick }) => (
     <div className="custom-next-arrow-c" onClick={onClick}>
-      <IoIosArrowForward />
+      <IoIosArrowForward className="custom-arrow-c-a"/>
     </div>
   );
 
@@ -77,7 +79,7 @@ const Cards = ({ showMore, setShowMore, setPop }) => {
               </Slider>
             </div>
           </div>
-          <div>
+          <div style={{padding: "10px"}}>
             <Link to={`/${flat.id}`} className="flat-name">
               {flat.name}
             </Link>

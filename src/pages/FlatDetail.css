@@ -1,5 +1,5 @@
 .Slider{
-  background: url(/imgs/bg2.png);
+  background: linear-gradient(180deg,#888, #fff,80%, #888888);
   background-size: cover;
   background-position: center;
   height: 100vh;
