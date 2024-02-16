@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { MdArrowForwardIos,MdArrowBackIos  } from "react-icons/md";
+import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
 import "./Cards.css";
 
 import { Link, useLocation, useParams } from "react-router-dom";
@@ -20,13 +20,13 @@ const Cards = ({ showMore, setShowMore, setPop }) => {
 
   const CustomPrevArrow = ({ onClick }) => (
     <div className="custom-prev-arrow-c" onClick={onClick}>
-      <IoIosArrowBack className="custom-arrow-c-a"/>
+      <IoIosArrowBack className="custom-arrow-c-a" />
     </div>
   );
 
   const CustomNextArrow = ({ onClick }) => (
     <div className="custom-next-arrow-c" onClick={onClick}>
-      <IoIosArrowForward className="custom-arrow-c-a"/>
+      <IoIosArrowForward className="custom-arrow-c-a" />
     </div>
   );
 
@@ -49,21 +49,24 @@ const Cards = ({ showMore, setShowMore, setPop }) => {
           }`}
         ></div>
       );
-    }
+    },
   };
   // className="flat-img"
   return (
     <div className="cards-wrapper">
       {flatsToRender.map((flat) => (
         <div key={flat.id} className="card">
-          <div>
+          <div className="card-h-c">
             <div className="flat-img">
               <Slider {...settings} className="slider-card">
                 {flat.pics.map((item, index) => (
-                  <div style={{
-                    height: "100%",
-                    width: "100%",
-                  }} key={index}>
+                  <div
+                    style={{
+                      height: "100%",
+                      width: "100%",
+                    }}
+                    key={index}
+                  >
                     <div
                       style={{
                         background: `url(${item}.jpg)`,
@@ -72,7 +75,7 @@ const Cards = ({ showMore, setShowMore, setPop }) => {
                         backgroundRepeat: "no-repeat",
                         height: "100%",
                         width: "100%",
-                        imageResolution: "100dpi"
+                        imageResolution: "100dpi",
                       }}
                     ></div>
                   </div>
@@ -80,7 +83,7 @@ const Cards = ({ showMore, setShowMore, setPop }) => {
               </Slider>
             </div>
           </div>
-          <div style={{padding: "10px"}}>
+          <div style={{ padding: "10px" }}>
             <Link to={`/${flat.id}`} className="flat-name">
               {flat.name}
             </Link>
@@ -89,14 +92,19 @@ const Cards = ({ showMore, setShowMore, setPop }) => {
               <span>{Math.round(flat.price / flat.area)} USD/m2</span>
             </p>
             <p className="flat-p-row">
-              {" "}
-              <img src="/icons/measurement.png" height="14px" />
-              &nbsp;{flat.area}m2, {flat.level}/{flat.levels} &nbsp;&nbsp;&nbsp;
-              <img src="/icons/bed.png" height="14px" />
-              &nbsp;этаж спален:
-              {flat.rooms} &nbsp;&nbsp;&nbsp;
-              <img src="/icons/map-marker.png" height="14px" />
-              &nbsp;{flat.region}
+              <div>
+                <img src="/icons/measurement.png" height="14px" />
+                &nbsp;&nbsp;{flat.area}m2, {flat.level}/{flat.levels}
+              </div>
+              <div>
+                <img src="/icons/bed.png" height="14px" />
+                &nbsp;&nbsp;этаж спален:
+                {flat.rooms}
+              </div>
+              <div>
+                <img src="/icons/map-marker.png" height="14px" />
+                &nbsp;&nbsp;{flat.region}
+              </div>
             </p>
             <p className="flat-desc">{flat.bio.slice(0, 200)}...</p>
             <button onClick={handlePopOpen} className="flat-button">

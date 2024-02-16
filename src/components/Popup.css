@@ -94,3 +94,22 @@
 .popup-wrapper.c{
   display: none;
 }
+
+@media (450px > width) {
+  .popup-body{
+    height: 110%;
+    width: 110%;
+    flex-direction: column;
+  }
+  
+  .popup-biz{
+    width: 100%;
+  }
+
+  .popup-pic{
+    width: 100%;
+    height: 80%;
+    background-position: 50% 40%;
+    background-size: 80%;
+  }
+}

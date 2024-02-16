@@ -453,6 +453,7 @@
   margin-top: 0px;
   font-weight: bolder;
   padding: 5px 0 5px 0;
+  color: #fff;
 }
 
 .fldt-title-price-mobile{
@@ -494,6 +495,7 @@
   cursor: pointer;
   text-decoration: none;
   margin-left: 10px;
+  color: #fff;
 }
 
 .button-mobile.p{
