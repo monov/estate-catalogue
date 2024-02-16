@@ -72,6 +72,7 @@ const Cards = ({ showMore, setShowMore, setPop }) => {
                         backgroundRepeat: "no-repeat",
                         height: "100%",
                         width: "100%",
+                        imageResolution: "100dpi"
                       }}
                     ></div>
                   </div>

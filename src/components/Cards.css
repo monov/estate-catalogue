@@ -84,7 +84,7 @@
 }
 
 .flat-button:hover{
-  background: #fdcb39;
+  background: #1f1f1f;
 }
 
 .slider-card{
@@ -100,7 +100,7 @@
 
 
 .flat-name:hover{
-  color: #fdcb39;
+  text-decoration: none;
 }
 
 .custom-prev-arrow-c, .custom-next-arrow-c {

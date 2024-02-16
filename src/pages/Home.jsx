@@ -62,7 +62,7 @@ const Home = () => {
     },
   ];
 
-  const [showMore, setShowMore] = useState(3);
+  const [showMore, setShowMore] = useState(6);
   const [isPop, setPop] = useState(false)
   const seeMoreClick = () => {
     setShowMore(showMore + 6)
